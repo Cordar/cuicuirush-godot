@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://bth6xne00gwdb"]
+
+[ext_resource type="Script" path="res://UI/home.gd" id="1_x6udq"]
+[ext_resource type="Texture2D" uid="uid://cw0gr0wkb8fx8" path="res://UI/Textures/Wood.svg" id="2_inikj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x6udq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.631373, 0.933333, 1, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.131
+offset_top = -324.0
+offset_right = 140.131
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_inikj")

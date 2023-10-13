@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsvildru7e7bq"]
+
+[ext_resource type="PackedScene" uid="uid://b3xbquabc3k78" path="res://Obstacles/obstacle_placeholder.tscn" id="1_cnu0d"]
+[ext_resource type="PackedScene" uid="uid://bgkhpf8ywha8n" path="res://Collectibles/paprika.tscn" id="2_28inp"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sm22g"]
+size = Vector2(5, 20)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sh64l"]
+data = PackedVector3Array(50, 0, 10, -50, 0, 10, 50, 0, -10, -50, 0, 10, -50, 0, -10, 50, 0, -10)
+
+[node name="Terrain_0" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.4516)
+mesh = SubResource("PlaneMesh_sm22g")
+
+[node name="Block_2" parent="." instance=ExtResource("1_cnu0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0)
+
+[node name="Block_0" parent="." instance=ExtResource("1_cnu0d")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_sh64l")
+
+[node name="Paprika" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1.63926, 0.565615, 0)
+
+[node name="Paprika10" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1.63926, 0.565615, 1.3641)
+
+[node name="Paprika11" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1.13833, 0.565614, 2.51634)
+
+[node name="Paprika12" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 3.16202)
+
+[node name="Paprika13" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 4.12595)
+
+[node name="Paprika14" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 5.10262)
+
+[node name="Paprika15" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 6.29957)
+
+[node name="Paprika16" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 7.29957)
+
+[node name="Paprika17" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 8.29957)
+
+[node name="Paprika18" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.202619, 0.565614, 9.18101)
+
+[node name="Paprika2" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1.63926, 0.565615, -0.908647)
+
+[node name="Paprika3" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1.63926, 0.565615, -1.98899)
+
+[node name="Paprika4" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -1.63926, 0.565615, -3.21995)
+
+[node name="Paprika5" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -0.706434, 0.565615, -4.39349)
+
+[node name="Paprika6" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.139695, 0.565615, -5.60438)
+
+[node name="Paprika7" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.139695, 0.565615, -6.58156)
+
+[node name="Paprika8" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.139695, 0.565615, -7.62335)
+
+[node name="Paprika9" parent="." instance=ExtResource("2_28inp")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.139695, 0.565615, -8.63422)
